@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>WebTerm</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+</head>
+<body onload="initTerminal(); setFocus();">
+
+	<div id="container">
+		<h1>WebTerm v0.1</h1>
+		<textarea id="terminal" class="center" rows="28" cols="100" onclick="moveCaretToEnd(this);" onkeydown="return checkKeyPress();" spellcheck="false"></textarea>
+	</div>
+
+	<div id="footer">
+		<p>Brought together by <a href="https://github.com/axelniklasson" target="_blank">axelniklasson</a> and <a href="https://github.com/sveningsonrobin" target="_blank">robinsveningson</a></p>
+	</div>
+
+	<script type="text/javascript" src="terminal.js"></script>	
+</body>
+</html>
