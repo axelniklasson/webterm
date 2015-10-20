@@ -64,7 +64,7 @@ function commandNotRecognized(command) {
 
 function initTerminal() {
 	var terminal = document.getElementById("terminal");
-	terminal.value = "Type help for a list of commands.";
+	terminal.value = "Type help for a list of commands.\n";
 	newLine();
 }
 
@@ -93,7 +93,7 @@ function moveCaretToEnd(el) {
 }
 
 function newLine() {
-	document.getElementById("terminal").value = document.getElementById("terminal").value + "\nWebTerm:~ johndoe$ ";
+	document.getElementById("terminal").value = document.getElementById("terminal").value + "\nWebTerm:~ axelniklasson$ ";
 }
 
 function parseCommand() {
@@ -122,7 +122,7 @@ function parseCommand() {
 }
 
 function printHelp() {
-	document.getElementById("terminal").value = document.getElementById("terminal").value + "\n\nCommands: \nclear\nhelp\nhistory\n<shape>(<start_coordinates>, <end_coordinates>, <color>): square((0,0), (100, 100), red)\n";
+	document.getElementById("terminal").value = document.getElementById("terminal").value + "\n\nCommands: \nclear\nhelp\nlog\n[more commands will be added]\n";
 }
 
 function printHistory() {
